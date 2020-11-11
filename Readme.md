@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Адель Закирова](https://up.htmlacademy.ru/adaptive/21/user/1353597).
-* Наставник: `Неизвестно`.
+* Наставник: Павел Позняк.
 
 ---
 
