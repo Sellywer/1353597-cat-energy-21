@@ -6,24 +6,22 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__logo">
-        <a class="page-header__logo-link">
-          <img
-            class="page-header__logo-image logo-image"
-            src="https://via.placeholder.com/34x37"
-            width="34"
-            height="37"
-            alt="Кэт энерджи в шляпе"
-          />
-          <img
-            class="page-header__logo-name"
-            src="https://via.placeholder.com/101x18"
-            width="101"
-            height="18"
-            alt="Название сайта Cat energy"
-          />
-        </a>
-      </div>
+      <a class="page-header__logo-link">
+        <img
+          class="page-header__logo-image logo-image"
+          src="https://via.placeholder.com/34x37"
+          width="34"
+          height="37"
+          alt="Кэт энерджи в шляпе"
+        />
+        <img
+          class="page-header__logo-name"
+          src="https://via.placeholder.com/101x18"
+          width="101"
+          height="18"
+          alt="Название сайта Cat energy"
+        />
+      </a>
       <button
         class="page-header__toggle"
         type="button"
@@ -54,9 +52,7 @@
           height="270"
           alt="Cat energy Pro с курицей"
         />
-        <a class="selection__button button" href="#">
-          Подобрать программу
-        </a>
+        <a class="selection__button button" href="#"> Подобрать программу </a>
       </section>
 
       <section class="programs">
@@ -129,24 +125,20 @@
         </div>
         <p class="example__cost">Затраты на питание: 15 000 руб.</p>
         <img
-          class="example__image example__image--before slider__item"
+          class="example__image example__image--before"
           src="https://via.placeholder.com/311x232"
           alt="Фото толстого кота Бориса"
         />
         <img
-          class="example__image example__image--after slider__item"
+          class="example__image example__image--after"
           src="https://via.placeholder.com/311x232"
           alt="Фото похудевшего кота Бориса"
         />
-        <p class="example__toggle slider__toggle">
-          <button class="slider__toggle--before" type="button">
-            Было
-          </button>
-          <input type="range" aria-label="Изменения">
-          <button class="slider__toggle--after" type="button">
-            Стало
-          </button>
-        </p>
+        <div class="example__toggle toggle">
+          <button class="toggle__before" type="button">Было</button>
+          <input type="range" aria-label="Изменения" />
+          <button class="toggle__after" type="button">Стало</button>
+        </div>
       </section>
 
       <section class="contacts">
@@ -167,43 +159,38 @@
       </section>
     </main>
     <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img
+          class="page-footer__logo logo-name"
+          src="https://via.placeholder.com/101x18"
+          width="101"
+          height="18"
+          alt="Название сайта Cat energy"
+        />
+      </a>
 
-        <a class="page-footer__logo">
-          <img
-            class="page-footer__logo logo-name"
-            src="https://via.placeholder.com/101x18"
-            width="101"
-            height="18"
-            alt="Название сайта Cat energy"
-          />
-        </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a href="#" class="social__link">Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">Инстаграмм</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">Твиттер</a>
+        </li>
+      </ul>
 
-        <ul class="page-footer__social social">
-            <li class="social__item">
-              <a href="#" class="social__link"
-                >Вконтакте</a
-              >
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link"
-                >Инстаграмм</a
-              >
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">Твиттер</a>
-            </li>
-          </ul>
-
-          <a
-            href="https://htmlacademy.ru/intensive/adaptive"
-            class="page-footer__copyright-link"
-            >HTML Academy
-            <img
-              class="page-footer__copyright-logo"
-              src="https://via.placeholder.com/27x34"
-              alt="Логотип HTML Academy"
-            />
-          </a>
+      <a
+        href="https://htmlacademy.ru/intensive/adaptive"
+        class="page-footer__copyright-link"
+        >HTML Academy
+        <img
+          class="page-footer__copyright-logo"
+          src="https://via.placeholder.com/27x34"
+          alt="Логотип HTML Academy"
+        />
+      </a>
     </footer>
   </body>
 </html>
