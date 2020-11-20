@@ -1,0 +1,47 @@
+.selection {
+  background-image: url("../img/selection__bg.jpg");
+  background-color: $light-apple;
+  background-repeat: no-repeat;
+  color: $white;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-family: $font-main;
+}
+
+.selection__title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $font-main;
+  padding-top: 27px;
+}
+
+.selection__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: $font-main;
+  padding-top: 25px;
+}
+
+.button {
+  color: $white;
+  text-transform: uppercase;
+  padding: 13px 60px;
+  background-color: $apple;
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 20px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $limeade;
+}
+
+.button:active {
+  color: $light-white;
+}

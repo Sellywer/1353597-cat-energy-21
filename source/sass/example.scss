@@ -1,0 +1,29 @@
+.example {
+  background-color: #eaeaea;
+  padding: 10px 20px;
+}
+
+.example__header {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.example__desc {
+  font-family: $font-add;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 25px 0;
+}
+
+.example__cost {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
