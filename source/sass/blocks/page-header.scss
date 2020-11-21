@@ -1,0 +1,12 @@
+.page-header__logo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.page-header__logo-link {
+  img {
+    margin: 0 20px;
+  }
+}

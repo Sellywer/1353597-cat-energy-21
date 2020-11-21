@@ -4,14 +4,15 @@
 }
 
 .advantages__title {
+  font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  font-weight: normal;
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -20,9 +21,10 @@
 }
 
 .advantages__desc {
-  color: #444444;
-  font-family: $font-add;
+  padding-left: 80px;
+
   font-size: 14px;
   line-height: 18px;
-  padding-left: 80px;
+  font-family: $font-add;
+  color: $charcoal;
 }

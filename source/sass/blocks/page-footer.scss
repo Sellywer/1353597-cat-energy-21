@@ -1,0 +1,74 @@
+.page-footer {
+  width: 100%;
+
+  background-color: $white-smoke;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 32px 20px;
+}
+
+.page-footer__logo {
+  width: 100%;
+  padding-bottom: 30px;
+
+  text-align: center;
+
+  border-bottom: 1px solid $bainsboro;
+}
+
+.page-footer__logo svg:hover,
+.page-footer__logo svg:hover:focus {
+  opacity: 0.8;
+}
+
+.page-footer__logo svg:active {
+  opacity: 0.6;
+}
+
+.page-footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 40px;
+
+  list-style: none;
+}
+
+.page-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 20px;
+  padding-top: 30px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $font-add;
+  color: $charcoal;
+
+  border-top: 1px solid $bainsboro;
+  svg {
+    fill: $dim-gray;
+  }
+}
+
+.page-footer__copyright-link:hover,
+.page-footer__copyright-link:focus {
+  svg {
+    fill: $apple;
+  }
+}
+
+.page-footer__copyright-link:active {
+  opacity: 0.3;
+  svg {
+    stroke: $light-apple;
+  }
+}
