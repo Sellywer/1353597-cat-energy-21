@@ -1,0 +1,22 @@
+.social__item {
+  margin: 0 15px;
+}
+
+.social__link {
+  svg {
+    fill: $dim-gray;
+  }
+}
+
+.social__link:hover,
+.social__link:focus {
+  svg {
+    fill: $apple;
+  }
+}
+
+.social__icon:active {
+  svg {
+    fill: $light-apple;
+  }
+}

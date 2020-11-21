@@ -1,0 +1,40 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $font-main;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-nav__item {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 0;
+
+  border-top: 1px solid $exstra-whisper;
+}
+
+.main-nav__item:hover,
+:focus {
+  opacity: 0.6;
+}
+
+.main-nav__item:active {
+  opacity: 0.3;
+}
+
+
+.main-nav__item:last-child {
+  border-bottom: 1px solid $exstra-whisper;
+}
+
+.main-nav__item--active {
+  border-bottom: 2px solid $apple;
+
+  pointer-events: none;
+}

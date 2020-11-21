@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+@import "variables";
+@import "global/fonts";
+@import "global/global";
+@import "global/container";
+@import "vendor/normalize";
+@import "blocks/page";
+@import "blocks/main-nav";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/selection";
+@import "blocks/programs";
+@import "blocks/advantages";
+@import "blocks/example";
+@import "blocks/toggle";
+@import "blocks/contacts";
+@import "blocks/page-footer";
+@import "blocks/social";

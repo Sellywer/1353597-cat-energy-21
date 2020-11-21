@@ -1,0 +1,30 @@
+.contacts__location {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.contacts__slogan {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $tints-of-black;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-add;
+  color: $charcoal;
+}
+
+.contacts__map-block {
+  img {
+    align-self: stretch;
+
+    object-fit: cover;
+    object-position: center;
+  }
+}

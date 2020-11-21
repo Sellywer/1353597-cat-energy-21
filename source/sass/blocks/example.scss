@@ -1,0 +1,32 @@
+.example {
+  padding: 10px 20px;
+
+  background-color: $whisper;
+}
+
+.example__header {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__desc {
+  margin: 25px 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-add;
+  color: $charcoal;
+}
+
+.example__cost {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -1,0 +1,20 @@
+.page {
+  height: 100%;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-family: $font-main;
+}
+
+.page__body {
+  display: grid;
+  align-content: center;
+  min-height: 100%;
+  margin: 0 auto;
+
+  color: $black;
+
+  background-color: $white;
+
+  grid-template-rows: min-content 1fr min-content;
+}

@@ -1,0 +1,51 @@
+.programs {
+  margin: 10px 0;
+}
+
+.programs__list {
+  display: grid;
+  margin: 0;
+  padding: 0 20px;
+
+  list-style: none;
+
+  grid-gap: 30px;
+}
+
+.programs__item {
+  padding: 0 20px;
+
+  background-color: $white-smoke;
+}
+
+.programs__header {
+  padding-left: 70px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: $font-main;
+  text-transform: uppercase;
+}
+
+.programs__desc {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-add;
+  color: $charcoal;
+}
+
+.programs__link {
+  padding: 15px 0;
+
+  font-family: $font-main;
+  text-align: left;
+  color: black;
+
+  background-color: transparent;
+  border-top: 1px solid $bainsboro;
+}
+
+.programs__link:active {
+  color: $light-black;
+}
