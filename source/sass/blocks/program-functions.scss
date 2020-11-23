@@ -1,0 +1,55 @@
+.program-functions__item {
+  margin: 0;
+  padding: 10px 0;
+
+  color: $nero;
+
+  label {
+    position: relative;
+
+    display: block;
+    margin-left: 46px;
+  }
+}
+
+.program-functions__radio + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -46px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid $very-light-grey;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.program-functions__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -38px;
+
+  width: 14px;
+  height: 14px;
+  background-color: $apple;
+
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.program-functions__radio:focus + label::before {
+  box-shadow: 0 0 1px 2px $black;
+}
+
+.program-functions__radio:disabled + label::before {
+  opacity: 0.3;
+  cursor: none;
+}
+
+.program-functions__radio:disabled + label {
+  cursor: none;
+  opacity: 0.3;
+}

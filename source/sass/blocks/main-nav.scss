@@ -33,7 +33,7 @@
   border-bottom: 1px solid $exstra-whisper;
 }
 
-.main-nav__item--active {
+.main-nav__item--active:not(.active-nav) {
   border-bottom: 2px solid $apple;
 
   pointer-events: none;

@@ -14,7 +14,7 @@
 
 .page-footer__logo {
   width: 100%;
-  padding-bottom: 30px;
+  padding: 20px 0;
 
   text-align: center;
 
@@ -54,6 +54,7 @@
   color: $charcoal;
 
   border-top: 1px solid $bainsboro;
+
   svg {
     fill: $dim-gray;
   }
@@ -68,6 +69,7 @@
 
 .page-footer__copyright-link:active {
   opacity: 0.3;
+
   svg {
     stroke: $light-apple;
   }
