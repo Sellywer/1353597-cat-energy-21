@@ -20,11 +20,7 @@
   color: $charcoal;
 }
 
-.contacts__map-block {
-  img {
-    align-self: stretch;
-
-    object-fit: cover;
-    object-position: center;
-  }
+.contacts-map-img {
+  background-size: cover;
+  background-position: center center;
 }

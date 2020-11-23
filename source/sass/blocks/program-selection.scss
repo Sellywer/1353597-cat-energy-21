@@ -1,0 +1,49 @@
+.program-selection__title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program-selection__subtitle {
+  width: 260px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.program-selection__item {
+  margin: 20px 0;
+  padding: 15px 0;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $charcoal;
+  text-transform: uppercase;
+
+  border: none;
+  border-bottom: 1px solid $bainsboro;
+}
+
+.legend {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+  text-transform: none;
+}
+
+.program-selection__button {
+  border: none;
+}
+
+.program-selection__legend {
+  margin-top: 20px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}

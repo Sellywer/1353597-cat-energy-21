@@ -30,7 +30,8 @@
 }
 
 .button {
-  margin: 0 20px;
+  width: 100%;
+  margin: 0;
   padding: 13px 48px;
 
   font-size: 14px;
@@ -40,13 +41,13 @@
   text-transform: uppercase;
 
   background-color: $apple;
-}
 
-.button:hover,
-.button:focus {
-  background-color: $limeade;
-}
+  &:hover,
+  &:focus {
+    background-color: $limeade;
+  }
 
-.button:active {
-  color: $light-white;
+  &:active {
+    color: $light-white;
+  }
 }
