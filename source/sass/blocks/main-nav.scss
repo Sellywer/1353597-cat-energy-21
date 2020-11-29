@@ -9,6 +9,20 @@
   font-family: $font-main;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: flex-end;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-nav__item {
@@ -17,6 +31,16 @@
   padding: 23px 0;
 
   border-top: 1px solid $exstra-whisper;
+
+  @media (min-width: $tablet) {
+    margin-left: 25px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 33px;
+  }
 }
 
 .main-nav__item:hover,
@@ -28,13 +52,20 @@
   opacity: 0.3;
 }
 
-
 .main-nav__item:last-child {
   border-bottom: 1px solid $exstra-whisper;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
 }
 
 .main-nav__item--active:not(.active-nav) {
   border-bottom: 2px solid $apple;
 
   pointer-events: none;
+
+  @media (min-width: $desktop) {
+    border-bottom: 2px solid $white;
+  }
 }

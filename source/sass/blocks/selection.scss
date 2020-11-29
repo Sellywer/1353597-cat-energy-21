@@ -6,9 +6,31 @@
   text-align: center;
   color: $white;
 
-  background-image: url("../img/selection__bg.jpg");
+  background-image: url("../img/selection__bg.jpg"), url("../../img/apple.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: auto, contain;
+
+  @media (min-width: $tablet) {
+    height: 800px;
+    padding: 0 30px;
+
+    text-align: left;
+    color: $black;
+
+    background-image: url("../../img/content/cat_energy-pro-big.jpg");
+    background-position-y: bottom;
+
+    img {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 200px 0;
+
+    background-image: none;
+  }
 }
 
 .selection__title {
@@ -18,6 +40,23 @@
   font-size: 36px;
   line-height: 36px;
   font-family: $font-main;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding-bottom: 0;
+    padding-left: 87px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    br {
+      display: block;
+    }
+  }
 }
 
 .selection__slogan {
@@ -28,6 +67,15 @@
   line-height: 14px;
   font-family: $font-main;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    margin-bottom: 25px;
+    padding-left: 87px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button {
@@ -38,9 +86,9 @@
   font-size: 14px;
   line-height: 18px;
   font-family: $font-main;
+  text-align: center;
   color: $white;
   text-transform: uppercase;
-  text-align: center;
 
   background-color: $apple;
 
@@ -51,5 +99,16 @@
 
   &:active {
     color: $light-white;
+  }
+}
+
+.selection__button {
+  @media (min-width: $tablet) {
+    width: 255px;
+    margin-left: 87px;
+    padding: 14px 26px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }

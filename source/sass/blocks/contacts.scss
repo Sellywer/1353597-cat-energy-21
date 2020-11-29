@@ -1,7 +1,37 @@
+.contacts {
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
+
 .contacts__location {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    width: 100%;
+    padding: 0 30px;
+
+    grid-gap: 438px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 50%;
+    left: 110px;
+
+    width: 570px;
+    height: 201px;
+    padding: 66px 89px 51px 76px;
+
+    background-color: $white;
+    transform: translateY(-50%);
+
+    grid-gap: 87px;
+  }
 }
 
 .contacts__slogan {
@@ -20,7 +50,16 @@
   color: $charcoal;
 }
 
-.contacts-map-img {
-  background-size: cover;
+.contacts__map-block {
+  width: 100%;
+  height: 362px;
+
+  background-image: url("../../img/content/map.jpg");
+  background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
 }

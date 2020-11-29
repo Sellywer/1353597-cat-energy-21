@@ -10,12 +10,23 @@
   list-style: none;
 
   grid-gap: 30px;
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+
+    grid-gap: 80px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .programs__item {
   padding: 0 20px;
 
   background-color: $white-smoke;
+
+  @media (min-width: $desktop) {
+    padding: 0 30px;
+  }
 }
 
 .programs__header {
@@ -26,6 +37,17 @@
   line-height: 37px;
   font-family: $font-main;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 214px;
+  }
 }
 
 .programs__desc {
@@ -33,6 +55,17 @@
   line-height: 18px;
   font-family: $font-add;
   color: $charcoal;
+
+  @media (min-width: $tablet) {
+    padding-right: 280px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 53px;
+  }
 }
 
 .programs__link {
@@ -44,6 +77,17 @@
 
   background-color: transparent;
   border-top: 1px solid $bainsboro;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 30px 50px;
+
+    border: none;
+  }
 }
 
 .programs__link:active {

@@ -10,6 +10,15 @@
   align-content: center;
   align-items: center;
   padding: 32px 20px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    align-items: baseline;
+    padding: 32px 30px;
+
+    grid-gap: 130px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .page-footer__logo {
@@ -19,6 +28,10 @@
   text-align: center;
 
   border-bottom: 1px solid $bainsboro;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
 }
 
 .page-footer__logo svg:hover,
@@ -37,6 +50,10 @@
   padding: 10px 40px;
 
   list-style: none;
+
+  @media (min-width: $tablet) {
+    padding: 10px 0;
+  }
 }
 
 .page-footer__copyright-link {
@@ -57,6 +74,12 @@
 
   svg {
     fill: $dim-gray;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0;
+
+    border: none;
   }
 }
 
