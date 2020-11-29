@@ -2,6 +2,10 @@
   padding: 10px 20px;
 
   background-color: $whisper;
+
+  @media (min-width: $desktop) {
+    padding: 10px 110px;
+  }
 }
 
 .example__header {
@@ -21,6 +25,13 @@
   line-height: 18px;
   font-family: $font-add;
   color: $charcoal;
+}
+
+.example__content {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__cost {
