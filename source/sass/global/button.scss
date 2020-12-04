@@ -1,0 +1,23 @@
+.button {
+  width: 280px;
+  padding: 13px 48px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-main;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: $apple;
+
+  &:hover,
+  &:focus {
+    background-color: $limeade;
+  }
+
+  &:active {
+    color: $light-white;
+  }
+}

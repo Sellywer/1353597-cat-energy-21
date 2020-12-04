@@ -1,8 +1,11 @@
 .toggle {
+  display: flex;
+  justify-content: center;
   padding: 10px;
 }
 
 .toggle__button {
+  margin: auto;
   padding: 0;
 
   font-weight: normal;
@@ -11,7 +14,10 @@
   text-transform: uppercase;
 
   border: none;
-  border-bottom: 1px dashed $black;
+
+  @media (min-width: $tablet) {
+    border-bottom: 1px dashed $black;
+  }
 
   &:hover,
   &:focus {

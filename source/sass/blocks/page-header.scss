@@ -2,9 +2,10 @@
   @media (min-width: $tablet) {
     display: grid;
     align-items: baseline;
-    padding: 27px 30px;
+    margin: 0 auto;
+    padding: 27px 0;
 
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
 
     .page-header__toggle {
       display: none;
@@ -12,11 +13,12 @@
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
+    max-width: 1440px;
 
     color: $white;
 
-    grid-template-columns: 1fr 7fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 110px 0;
   }
 }
 
@@ -26,6 +28,10 @@
   align-items: center;
 
   text-align: center;
+
+  @media (min-width: $desktop) {
+    justify-self: left;
+  }
 }
 
 .page-header__logo-link {
@@ -35,22 +41,5 @@
     @media (min-width: $tablet) {
       margin: 0 5px;
     }
-  }
-}
-
-.intro {
-  @media (min-width: $desktop) {
-    position: relative;
-
-    display: flex;
-    flex-direction: row;
-    height: 820px;
-    padding: 54px 110px;
-
-    background-image: url("../../img/content/cat_energy-pro.png"),
-      url("../../img/selection__bg.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom, top right -150px;
-    background-size: 552px 499px, contain;
   }
 }

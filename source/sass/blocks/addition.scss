@@ -50,3 +50,12 @@
   cursor: none;
   opacity: 0.3;
 }
+
+
+.addition__wrapper {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+}

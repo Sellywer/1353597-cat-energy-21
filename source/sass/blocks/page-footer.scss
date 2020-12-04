@@ -22,16 +22,10 @@
 }
 
 .page-footer__logo {
-  width: 100%;
+  align-self: center;
   padding: 20px 0;
 
   text-align: center;
-
-  border-bottom: 1px solid $bainsboro;
-
-  @media (min-width: $tablet) {
-    border: none;
-  }
 }
 
 .page-footer__logo svg:hover,
@@ -44,12 +38,36 @@
 }
 
 .page-footer__social {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px 40px;
 
   list-style: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: calc(100vw - 40px);
+    height: 1px;
+
+    background-color: $bainsboro;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &::after {
+    top: 0;
+  }
 
   @media (min-width: $tablet) {
     padding: 10px 0;
@@ -60,7 +78,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: max-content;
   margin: 0 20px;
   padding-top: 30px;
 
@@ -70,10 +88,13 @@
   font-family: $font-add;
   color: $charcoal;
 
-  border-top: 1px solid $bainsboro;
-
   svg {
+    margin-left: 140px;
     fill: $dim-gray;
+
+    @media (min-width: $tablet) {
+    margin-left: 15px;
+    }
   }
 
   @media (min-width: $tablet) {

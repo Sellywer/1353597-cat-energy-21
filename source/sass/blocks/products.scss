@@ -207,6 +207,9 @@
 }
 
 .products__item-button {
+  transform: translateX(0);
+  text-align: center;
+  width: 100%;
   @media (min-width: $tablet) {
     padding: 10px 93px;
   }

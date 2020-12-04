@@ -1,3 +1,7 @@
+.program-selection {
+  margin-bottom: 20px;
+}
+
 .program-selection__title {
   font-weight: normal;
   font-size: 36px;
@@ -11,6 +15,15 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.program-selection__wrapper-cat-program {
+  @media (min-width: $desktop) {
+    display: grid;
+
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .program-selection__item {
@@ -37,6 +50,7 @@
 
 .program-selection__button {
   border: none;
+  transform: translateX(0);
 }
 
 .program-selection__legend {
@@ -46,4 +60,12 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+}
+
+.program-selection__button-wrapper {
+  @media (min-width: $tablet) {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
 }
