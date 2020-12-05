@@ -15,6 +15,12 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+  font-size: 20px;
+  line-height: 30px;
+  width: 400px;
+  }
 }
 
 .program-selection__wrapper-cat-program {
@@ -23,12 +29,13 @@
 
     grid-gap: 50px;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
   }
 }
 
 .program-selection__item {
   margin: 20px 0;
-  padding: 15px 0;
+  padding: 0;
 
   font-weight: normal;
   font-size: 16px;
@@ -38,6 +45,15 @@
 
   border: none;
   border-bottom: 1px solid $bainsboro;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+  margin: 0;
+  padding: 15px 0;
+  }
 }
 
 .legend {
@@ -60,12 +76,16 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+    padding: 0 10px;
+  }
 }
 
 .program-selection__button-wrapper {
   @media (min-width: $tablet) {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
   }
 }

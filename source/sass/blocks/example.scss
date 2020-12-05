@@ -52,6 +52,9 @@
 .example__plus {
   @media (min-width: $tablet) {
     max-width: 768px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop) {

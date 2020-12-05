@@ -4,6 +4,8 @@
 
   border: 1px solid $tints-of-whisper;
   outline: none;
+  resize: none;
+  padding: 10px;
 
   &:hover {
     border: 1px solid $very-light-grey;
@@ -20,5 +22,6 @@
   &::placeholder {
     color: $charcoal;
     text-transform: uppercase;
+    padding: 10px;
   }
 }
