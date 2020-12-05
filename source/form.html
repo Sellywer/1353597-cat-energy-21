@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--form">
       <div class="page-header__logo">
         <a class="page-header__logo-link">
           <img
@@ -32,7 +32,7 @@
         ></button>
       </div>
       <nav class="main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--ost">
           <li class="main-nav__item">
             <a href="index.html"> Главная </a>
           </li>
@@ -59,110 +59,115 @@
           action="https://echo.htmlacademy.ru"
           method="post"
         >
-          <fieldset class="program-selection__item about-cat">
-            <div class="about-cat__item">
-              <label for="cat-name"
-                >Имя*
-                <input
-                  id="cat-name"
-                  type="text"
-                  name="cat-name"
-                  placeholder="Барсик"
-                  required
-                />
-              </label>
-            </div>
-            <div class="about-cat__item">
-              <label for="cat-weight"
-                >Вес (кг):*
-                <input
-                  id="cat-weight"
-                  type="text"
-                  name="cat-weight"
-                  placeholder="7"
-                  required
-                />
-              </label>
-            </div>
-            <div class="about-cat__item">
-              <label for="cat-age"
-                >Возраст (лет):
-                <input
-                  id="cat-age"
-                  type="text"
-                  name="cat-age"
-                  placeholder="7"
-                  required
-                />
-              </label>
-            </div>
-          </fieldset>
+          <div class="program-selection__wrapper-cat-program">
+            <fieldset class="program-selection__item about-cat">
+              <div class="about-cat__item">
+                <label for="cat-name"
+                  >Имя*
+                  <input
+                    id="cat-name"
+                    type="text"
+                    name="cat-name"
+                    placeholder="Барсик"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="about-cat__item">
+                <label for="cat-weight"
+                  >Вес (кг):*
+                  <input
+                    id="cat-weight"
+                    type="text"
+                    name="cat-weight"
+                    placeholder="7"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="about-cat__item">
+                <label for="cat-age"
+                  >Возраст (лет):
+                  <input
+                    id="cat-age"
+                    type="text"
+                    name="cat-age"
+                    placeholder="7"
+                    required
+                  />
+                </label>
+              </div>
+            </fieldset>
 
-          <fieldset class="program-selection__item program-functions">
-            <div class="program-functions__item">
-              <input class="program-functions__radio visually-hidden"
-                type="radio"
-                name="program-functions"
-                id="slim"
-                value="Похудение"
-                checked
-              />
-              <label for="slim">Похудение</label>
-            </div>
-            <div class="program-functions__item">
-              <input class="program-functions__radio visually-hidden"
-                type="radio"
-                name="program-functions"
-                id="fat"
-                value="Набор массы"
-              />
-              <label for="fat">Набор массы</label>
-            </div>
-            <div class="program-functions__item">
-              <input class="program-functions__radio visually-hidden"
-                type="radio"
-                name="program-functions"
-                id="help"
-                value="Не знаю (Нужен ваш совет)"
-              />
-              <label for="help">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </fieldset>
+            <fieldset class="program-selection__item program-functions">
+              <div class="program-functions__item">
+                <input
+                  class="program-functions__radio visually-hidden"
+                  type="radio"
+                  name="program-functions"
+                  id="slim"
+                  value="Похудение"
+                  checked
+                />
+                <label for="slim">Похудение</label>
+              </div>
+              <div class="program-functions__item">
+                <input
+                  class="program-functions__radio visually-hidden"
+                  type="radio"
+                  name="program-functions"
+                  id="fat"
+                  value="Набор массы"
+                />
+                <label for="fat">Набор массы</label>
+              </div>
+              <div class="program-functions__item">
+                <input
+                  class="program-functions__radio visually-hidden"
+                  type="radio"
+                  name="program-functions"
+                  id="help"
+                  value="Не знаю (Нужен ваш совет)"
+                />
+                <label for="help">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </fieldset>
+          </div>
 
           <fieldset class="program-selection__item about-owner">
             <legend class="about-owner__legend legend">
               Контактные данные (владельца кота)
             </legend>
-            <div class="about-owner__item">
-              <label for="owner-email"
-                >Email*
-                <input
-                  id="owner-email"
-                  type="text"
-                  name="owner-email"
-                  placeholder="kuklachev@gmail.com"
-                  required
-                />
-              </label>
-            </div>
-            <div class="about-owner__item">
-              <label for="owner-phone"
-                >Телефон:*
-                <input
-                  id="owner-phone"
-                  type="text"
-                  name="owner-phone"
-                  placeholder="8 (960) 900-60-90"
-                  required
-                />
-              </label>
+            <div class="about-owner__wrapper">
+              <div class="about-owner__item">
+                <label for="owner-email"
+                  >Email*
+                  <input
+                    id="owner-email"
+                    type="text"
+                    name="owner-email"
+                    placeholder="kuklachev@gmail.com"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="about-owner__item">
+                <label for="owner-phone"
+                  >Телефон:*
+                  <input
+                    id="owner-phone"
+                    type="text"
+                    name="owner-phone"
+                    placeholder="8 (960) 900-60-90"
+                    required
+                  />
+                </label>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="program-selection__item comment">
-            <legend class="comment__legend legend">
-              Комментарий
-            </legend>
+            <legend class="comment__legend legend">Комментарий</legend>
             <textarea
               class="comment__textarea"
               name="comment"
@@ -174,70 +179,73 @@
           </fieldset>
 
           <fieldset class="program-selection__item addition">
-            <legend class="addition__legend legend">
-              Дополнительно
-            </legend>
-            <div class="addition__item">
-              <input class="addition-checkbox visually-hidden"
-                type="checkbox"
-                name="addition"
-                id="sweetener"
-                value="Сахарозаменитель"
-                checked
-              />
-              <label for="sweetener">Сахарозаменитель</label>
-            </div>
-            <div class="addition__item">
-              <input class="addition-checkbox visually-hidden"
-                type="checkbox"
-                name="addition"
-                id="water"
-                value="Питьевая вода"
-              />
-              <label for="water">Питьевая вода</label>
-            </div>
-            <div class="addition__item">
-              <input class="addition-checkbox visually-hidden" type="checkbox" name="addition" id="milk" value="Молоко" />
-              <label for="milk">Молоко</label>
-            </div>
-            <div class="addition__item">
-              <input class="addition-checkbox visually-hidden"
-                type="checkbox"
-                name="addition"
-                id="vitamins"
-                value="Витамины"
-              />
-              <label for="vitamins">Витамины</label>
+            <legend class="addition__legend legend">Дополнительно</legend>
+            <div class="addition__wrapper">
+              <div class="addition__item">
+                <input
+                  class="addition-checkbox visually-hidden"
+                  type="checkbox"
+                  name="addition"
+                  id="sweetener"
+                  value="Сахарозаменитель"
+                  checked
+                />
+                <label for="sweetener">Сахарозаменитель</label>
+              </div>
+              <div class="addition__item">
+                <input
+                  class="addition-checkbox visually-hidden"
+                  type="checkbox"
+                  name="addition"
+                  id="water"
+                  value="Питьевая вода"
+                />
+                <label for="water">Питьевая вода</label>
+              </div>
+              <div class="addition__item">
+                <input
+                  class="addition-checkbox visually-hidden"
+                  type="checkbox"
+                  name="addition"
+                  id="milk"
+                  value="Молоко"
+                />
+                <label for="milk">Молоко</label>
+              </div>
+              <div class="addition__item">
+                <input
+                  class="addition-checkbox visually-hidden"
+                  type="checkbox"
+                  name="addition"
+                  id="vitamins"
+                  value="Витамины"
+                />
+                <label for="vitamins">Витамины</label>
+              </div>
             </div>
           </fieldset>
-
-          <div class="program-selection_button-wrapper">
+          <div class="program-selection__button-wrapper">
             <button class="program-selection__button button" type="submit">
               Отправить заявку
             </button>
-          </div>
 
-          <p class="program-selection__legend">
-            <small>* — Обязательные поля</small>
-          </p>
+            <p class="program-selection__legend">
+              <small>* — Обязательные поля</small>
+            </p>
+          </div>
         </form>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__location">
+        <div class="contacts__location container">
           <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </div>
         <div class="contacts__map-block">
-          <img
-            class="contacts-map-img"
-            width="100%"
-            src="img/content/map.png"
-            alt="Местонахождение компании Cat energy"
-          />
+          <img />
         </div>
       </section>
     </main>

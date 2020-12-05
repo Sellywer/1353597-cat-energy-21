@@ -35,3 +35,17 @@
     text-transform: uppercase;
   }
 }
+
+
+.about-owner__wrapper {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+}

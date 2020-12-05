@@ -3,9 +3,19 @@
 
   background-color: $whisper;
 
-  @media (min-width: $desktop) {
-    padding: 10px 110px;
+  @media (min-width: $tablet) {
+    padding: 10px 30px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    padding-bottom: 70px;
+    background: none;
+  }
+}
+
+.example__container {
+  padding: 0;
 }
 
 .example__header {
@@ -15,6 +25,46 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet) {
+    padding: 10px 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 10px 110px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet) {
+    background-color: $whisper;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
+}
+
+.example__plus {
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1440px;
+    padding: 10px 110px;
+    margin: 0 auto;
+  }
 }
 
 .example__desc {
@@ -31,7 +81,21 @@
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+  }
+}
+
+.example__change {
+  display: flex;
+  justify-content: space-around;
+}
+
+.example__weight {
+  margin-right: 30px;
 }
 
 .example__cost {
