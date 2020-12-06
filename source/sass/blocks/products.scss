@@ -1,6 +1,16 @@
 .catalog {
+  margin: 0 auto;
+  max-width: 320px;
+  width: 100%;
+
   @media (min-width: $tablet) {
+    max-width: 768px;
     padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1440px;
+    padding: 0 110px;
   }
 }
 
@@ -12,6 +22,15 @@
   font-size: 36px;
   line-height: 36px;
   font-family: $font-main;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .products__list {
@@ -27,6 +46,11 @@
 
     grid-gap: 60px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 80px;
   }
 }
 
@@ -51,6 +75,10 @@
     background-size: 100% 80%;
     background-position: bottom;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 40px 30px 40px 35px;
   }
 }
 
@@ -87,6 +115,7 @@
   line-height: 20px;
 
   @media (min-width: $tablet) {
+    padding: 0 50px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -94,6 +123,10 @@
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 40px;
   }
 }
 
@@ -115,6 +148,10 @@
   @media (min-width: $tablet) {
     font-size: 16px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 245px;
+  }
 }
 
 .products-table__info {
@@ -133,7 +170,7 @@
   position: relative;
 
   min-height: 209px;
-  padding: 83px 0 15px 0;
+  padding: 83px 20px 15px;
 
   text-align: center;
 
@@ -143,6 +180,11 @@
     justify-content: space-between;
     padding: 268px 40px 38px 40px;
     background: none;
+  }
+
+  @media (min-width: $desktop) {
+  padding: 268px 38px 40px 38px;
+  background: none;
   }
 }
 
@@ -214,12 +256,26 @@
   @media (min-width: $tablet) {
     padding: 10px 93px;
   }
+
+  @media (min-width: $desktop) {
+  width: 168px;
+    padding: 10px 53px;
+    margin: 0 auto;
+  }
 }
 
-.products__item-button-all {
+.products__item-button--all {
   color: $charcoal;
 
   background-color: $white-smoke;
+
+  transform: translateX(0);
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: $desktop) {
+    padding: 10px 39px;
+  }
 
   &:hover,
   &:focus {

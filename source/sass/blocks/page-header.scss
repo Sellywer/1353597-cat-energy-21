@@ -28,6 +28,10 @@
   @media (min-width: $desktop) {
     padding: 50px 110px;
   }
+
+  .main-nav__item--active:not(.active-nav) {
+    border-bottom: 2px solid $apple;
+  }
 }
 
 .page-header__logo {
