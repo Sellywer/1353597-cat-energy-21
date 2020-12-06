@@ -1,7 +1,7 @@
 .catalog {
-  margin: 0 auto;
-  max-width: 320px;
   width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet) {
     max-width: 768px;
@@ -49,8 +49,8 @@
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -70,11 +70,12 @@
 
   @media (min-width: $tablet) {
     padding: 40px 38px;
+
     background-image: url("../../img/Rectangle\ 1.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
     //$white-smoke;
     background-size: 100% 80%;
-    background-position: bottom;
-    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop) {
@@ -101,6 +102,7 @@
   @media (min-width: $tablet) {
     width: 161px;
     height: 172px;
+
     background-color: transparent;
   }
 }
@@ -116,6 +118,7 @@
 
   @media (min-width: $tablet) {
     padding: 0 50px;
+
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -179,12 +182,14 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 268px 40px 38px 40px;
+
     background: none;
   }
 
   @media (min-width: $desktop) {
-  padding: 268px 38px 40px 38px;
-  background: none;
+    padding: 268px 38px 40px 38px;
+
+    background: none;
   }
 }
 
@@ -201,8 +206,9 @@
   transform: translateX(-50%);
 
   @media (min-width: $tablet) {
-    width: 60px;
     top: 200px;
+
+    width: 60px;
   }
 }
 
@@ -217,8 +223,9 @@
   background-color: $light-gray;
 
   @media (min-width: $tablet) {
-    height: 60px;
     top: 168px;
+
+    height: 60px;
   }
 }
 
@@ -239,8 +246,8 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  color: $charcoal;
   font-family: $font-add;
+  color: $charcoal;
 
   @media (min-width: $tablet) {
     font-size: 16px;
@@ -249,29 +256,31 @@
 }
 
 .products__item-button {
-  transform: translateX(0);
-  text-align: center;
   width: 100%;
+
+  text-align: center;
+
+  transform: translateX(0);
 
   @media (min-width: $tablet) {
     padding: 10px 93px;
   }
 
   @media (min-width: $desktop) {
-  width: 168px;
-    padding: 10px 53px;
+    width: 168px;
     margin: 0 auto;
+    padding: 10px 53px;
   }
 }
 
 .products__item-button--all {
+  width: 100%;
+
+  text-align: center;
   color: $charcoal;
 
   background-color: $white-smoke;
-
   transform: translateX(0);
-  text-align: center;
-  width: 100%;
 
   @media (min-width: $desktop) {
     padding: 10px 39px;
