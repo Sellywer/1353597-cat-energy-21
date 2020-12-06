@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--form">
       <div class="page-header__logo">
         <a class="page-header__logo-link">
           <img
@@ -317,82 +317,84 @@
               <p class="products__item-text">
                 На самом деле вкусов гораздо больше!
               </p>
-              <a class="products__item-button-all button" href="#"
+              <a class="products__item-button--all button" href="#"
                 >Показать все</a
               >
             </li>
           </ul>
         </section>
 
-        <section class="catalog__add-goods add-goods container">
+        <section class="catalog__add-goods add-goods">
           <h2 class="add-goods__title">Дополнительные товары</h2>
-          <ul class="add-goods__list">
-            <li class="add-goods__item">
-              <div class="add-goods__item-content">
-                <h3 class="add-goods__item-title">Сахарозаменитель</h3>
-                <table class="add-goods__item-table">
-                  <tr class="add-goods__item-info">
-                    <td>1 упаковка (100 г)</td>
-                    <td>200 Р.</td>
-                  </tr>
-                </table>
-              </div>
-              <a class="add-goods__item-button button" href="form.html"
-                >Заказать</a
-              >
-            </li>
+          <div class="add-goods__wrapper">
+            <ul class="add-goods__list">
+              <li class="add-goods__item">
+                <div class="add-goods__item-content">
+                  <h3 class="add-goods__item-title">Сахарозаменитель</h3>
+                  <table class="add-goods__item-table">
+                    <tr class="add-goods__item-info">
+                      <td>1 упаковка (100 г)</td>
+                      <td>200 Р.</td>
+                    </tr>
+                  </table>
+                </div>
+                <a class="add-goods__item-button button" href="form.html"
+                  >Заказать</a
+                >
+              </li>
 
-            <li class="add-goods__item">
-              <div class="add-goods__item-content">
-                <h3 class="add-goods__item-title">Питьевая вода</h3>
-                <table class="add-goods__item-table">
-                  <tr class="add-goods__item-info">
-                    <td>5 литров</td>
-                    <td>50 Р.</td>
-                  </tr>
-                </table>
-              </div>
-              <a class="add-goods__item-button button" href="form.html"
-                >Заказать</a
-              >
-            </li>
+              <li class="add-goods__item">
+                <div class="add-goods__item-content">
+                  <h3 class="add-goods__item-title">Питьевая вода</h3>
+                  <table class="add-goods__item-table">
+                    <tr class="add-goods__item-info">
+                      <td>5 литров</td>
+                      <td>50 Р.</td>
+                    </tr>
+                  </table>
+                </div>
+                <a class="add-goods__item-button button" href="form.html"
+                  >Заказать</a
+                >
+              </li>
 
-            <li class="add-goods__item">
-              <div class="add-goods__item-content">
-                <h3 class="add-goods__item-title">Молоко</h3>
-                <table class="add-goods__item-table">
-                  <tr class="add-goods__item-info">
-                    <td>1 литр</td>
-                    <td>100 Р.</td>
-                  </tr>
-                </table>
-              </div>
-              <a class="add-goods__item-button button" href="form.html"
-                >Заказать</a
-              >
-            </li>
+              <li class="add-goods__item">
+                <div class="add-goods__item-content">
+                  <h3 class="add-goods__item-title">Молоко</h3>
+                  <table class="add-goods__item-table">
+                    <tr class="add-goods__item-info">
+                      <td>1 литр</td>
+                      <td>100 Р.</td>
+                    </tr>
+                  </table>
+                </div>
+                <a class="add-goods__item-button button" href="form.html"
+                  >Заказать</a
+                >
+              </li>
 
-            <li class="add-goods__item">
-              <div class="add-goods__item-content">
-                <h3 class="add-goods__item-title">Витамины</h3>
-                <table class="add-goods__item-table">
-                  <tr class="add-goods__item-info">
-                    <td>1 упаковка (30 г)</td>
-                    <td>300 Р.</td>
-                  </tr>
-                </table>
-              </div>
-              <a class="add-goods__item-button button" href="form.html"
-                >Заказать</a
-              >
-            </li>
-          </ul>
+              <li class="add-goods__item">
+                <div class="add-goods__item-content">
+                  <h3 class="add-goods__item-title">Витамины</h3>
+                  <table class="add-goods__item-table">
+                    <tr class="add-goods__item-info">
+                      <td>1 упаковка (30 г)</td>
+                      <td>300 Р.</td>
+                    </tr>
+                  </table>
+                </div>
+                <a class="add-goods__item-button button" href="form.html"
+                  >Заказать</a
+                >
+              </li>
+            </ul>
 
-          <div class="add-goods__gift">
-            <p class="add-goods__gift-desc">
-              Закажите все<br />
-              и получите чехол для кота в подарок!
-            </p>
+            <div class="add-goods__gift">
+              <p class="add-goods__gift-desc">
+                Закажите все<br />
+                и получите чехол для кота в подарок!
+              </p>
+            </div>
           </div>
         </section>
       </section>
@@ -406,7 +408,7 @@
           </p>
         </div>
         <div class="contacts__map-block">
-          <img>
+          <img />
         </div>
       </section>
     </main>
