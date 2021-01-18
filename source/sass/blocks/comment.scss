@@ -1,27 +1,118 @@
-.comment__textarea {
-  width: 100%;
-  margin: 5px 0;
+.comment {
+  margin-top: 24px;
 
-  border: 1px solid $tints-of-whisper;
-  outline: none;
-  resize: none;
-  padding: 10px;
-
-  &:hover {
-    border: 1px solid $very-light-grey;
+  @media (min-width: $tablet) {
+    margin-top: 64px;
   }
 
-  &:active {
-    border: 1px solid $very-light-grey;
+  @media (min-width: $desktop) {
+    margin-top: 44px;
+  }
+}
+
+.comment__legend {
+  position: relative;
+
+  display: flex;
+  padding: 0;
+  margin-right: 163px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(49% + 6px);
+
+    flex-grow: 1;
+    width: 48vw;
+    height: 3px;
+
+    background-color: $apple;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $tablet) {
+    margin-right: 450px;
+
+    &::after {
+      top: 62%;
+      left: calc(37% + 9px);
+
+      min-width: 62vw;
+
+      transform: translateY(-38%);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 62%;
+      right: calc(95% + 9px);
+
+      flex-grow: 1;
+      min-width: 4vw;
+      height: 3px;
+
+      background-color: $apple;
+      transform: translateY(-38%);
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 1040px;
+
+    &::after {
+      top: 63%;
+      left: calc(22% + 14px);
+      min-width: 77vw;
+
+      transform: translateY(-37%);
+    }
+
+    &::before {
+      top: 63%;
+      right: calc(95% + 4px);
+      min-width: 5vw;
+      transform: translateY(-37%);
+    }
+  }
+}
+
+.comment__textarea {
+  width: 100%;
+  padding: 10px;
+
+  box-shadow: 0 0 0 1px $tints-of-whisper;
+  outline: none;
+  border: none;
+
+  resize: none;
+
+  @media (min-width: $tablet) {
+    padding: 10px 15px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 1px $very-light-grey;
   }
 
   &:focus {
-    border: 1px solid $charcoal;
+    box-shadow: 0 0 0 2px $charcoal;
   }
 
   &::placeholder {
+    padding: 0 3px;
+
+    font-size: 16px;
     color: $charcoal;
     text-transform: uppercase;
-    padding: 10px;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

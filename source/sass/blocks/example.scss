@@ -1,107 +1,337 @@
 .example {
-  padding: 10px 20px;
+  margin-top: 46px;
+  padding-bottom: 10px;
 
   background-color: $whisper;
 
   @media (min-width: $tablet) {
-    padding: 10px 30px;
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
   }
 
   @media (min-width: $desktop) {
-    padding: 0;
-    padding-bottom: 70px;
+    margin: 0;
+
     background: none;
   }
 }
 
 .example__container {
-  padding: 0;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin-bottom: 63px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1440px;
+    padding: 0;
+  }
+}
+
+.example__block {
+  margin-top: 34px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding-bottom: 61px;
+
+    background: linear-gradient(to bottom, transparent 0%, transparent 49.5%, $whisper 49.5%, $whisper 100%);
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 0 60px;
+
+    background: linear-gradient(to right, $white-smoke 0%, $white-smoke 72.5%, $whisper 72.5%, $whisper 100%);
+  }
+}
+
+.example__block-wrapper {
+  @media (min-width: $desktop) {
+    display: grid;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 110px 7px;
+
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.example__changes {
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .example__header {
   margin: 0;
-  padding: 0;
+  padding: 27px 0 0;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 
   @media (min-width: $tablet) {
-    padding: 10px 30px;
+    margin: 0 10px;
+    padding: 0;
+
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop) {
-    padding: 10px 110px;
+    margin-bottom: 76px;
+    padding: 0 100px;
   }
 }
 
 .example__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+
   @media (min-width: $tablet) {
-    background-color: $whisper;
-    padding: 0 30px;
+    max-width: 768px;
     margin: 0 auto;
+    margin-bottom: 65px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop) {
+    display: flex;
+    margin: 0;
     padding: 0;
   }
 }
 
 .example__plus {
   @media (min-width: $tablet) {
+    width: 100%;
     max-width: 768px;
-    width: 100%;
-    padding: 0 30px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $desktop) {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1440px;
-    padding: 10px 110px;
     margin: 0 auto;
   }
 }
 
 .example__desc {
-  margin: 25px 0;
+  margin: 18px 0 0;
+  padding: 0;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   font-family: $font-add;
   color: $charcoal;
-}
 
-.example__content {
   @media (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0 6px 54px 0;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop) {
     flex-direction: column;
+    margin: 30px 172px 30px 0;
+  }
+}
+
+.example__content {
+  margin-top: 26px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    align-items: center;
+    margin: 0;
+
+    grid-gap: 159px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 68px;
+
+    grid-gap: 62px;
+    grid-template-columns: 1fr;
   }
 }
 
 .example__change {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  @media (min-width: $desktop) {
+    justify-content: left;
+  }
 }
 
-.example__weight {
-  margin-right: 30px;
+.example__weight,
+.example__days {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
 }
 
-.example__cost {
-  font-weight: normal;
+.example__days {
+  @media (min-width: $desktop) {
+    margin-left: 44px;
+  }
+}
+
+.example__price {
+  margin: 34px 0 0;
+  padding: 0;
+
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 27px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+
+    line-height: 20px;
+    text-align: left;
+
+    span {
+      margin-left: 63px;
+    }
+  }
+}
+
+.example__images {
+  max-width: 320px;
+  margin: 37px auto 0;
+  padding: 0 20px;
+
+  img {
+    height: 237px;
+
+    @media (min-width: $tablet) {
+      width: 708px;
+      height: auto;
+    }
+
+    @media (min-width: $desktop) {
+      width: 689px;
+      height: auto;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+
+  @media (min-width: $desktop) {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    padding-top: 318px;
+
+    background: none;
+  }
+}
+
+.example__slider {
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+
+  pointer-events: none;
+
+  @media (min-width: $tablet) {
+    width: 708px;
+    height: 547px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: -117px;
+    left: -20px;
+
+    width: 689px;
+    height: auto;
+    padding: 0;
+  }
+}
+
+.example__scale {
+  position: relative;
+
+  width: 83px;
+  height: 14px;
+  margin: 0;
+
+  background-color: $white;
+  border: 1px solid $very-light-grey;
+  border-radius: 6px;
+
+  @media (min-width: $tablet) {
+    width: 428px;
+    height: 6px;
+    margin: 15px 18px;
+
+    background-color: $very-light-grey;
+  }
+}
+
+.example__scale-bar {
+  width: 35px;
+  height: 6px;
+  margin: 3px 5px;
+
+  background-color: $apple;
+  border-radius: 6px;
+
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 40px;
+    height: 40px;
+    margin: 0;
+
+    border: 15px solid $white;
+    border-radius: 50%;
+    box-shadow: 0 2px 0 0 $shadow;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3 5px $dark-shadow;
+    }
+
+    &:active {
+      box-shadow: 0 1px 0 0 $apple,
+        0 3px 5px 0 $black-shadow;
+    }
+  }
 }

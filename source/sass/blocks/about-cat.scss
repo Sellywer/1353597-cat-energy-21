@@ -1,0 +1,87 @@
+.about-cat {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+
+  &__item {
+    margin-bottom: 14px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  label {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    white-space: nowrap;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  input {
+    position: relative;
+
+    flex-grow: 1;
+    height: 45px;
+    margin: 0 0 0 14px;
+    padding: 10px 10px 10px 15px;
+
+    text-transform: uppercase;
+
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 1px $tints-of-whisper;
+
+    @media (min-width: $tablet) {
+      height: 52px;
+      padding: 10px 40px 10px 21px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 0 1px $very-light-grey;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px $charcoal;
+    }
+
+    &:focus + svg {
+      color: $apple;
+    }
+
+    &:required:invalid:focus {
+      box-shadow: 0 0 0 2px $light-coral;
+    }
+
+    &:required:invalid:focus + svg {
+      color: $light-coral;
+    }
+  }
+
+  ::placeholder {
+    color: $charcoal;
+  }
+}

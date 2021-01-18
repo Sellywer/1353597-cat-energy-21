@@ -1,40 +1,79 @@
+.addition {
+  margin-top: 23px;
+
+  @media (min-width: $tablet) {
+    margin-top: 62px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 68px;
+  }
+}
+
+.addition__legend {
+  @media (min-width: $tablet) {
+    margin-bottom: 62px;
+  }
+}
+
 .addition__item {
-  padding: 15px 0;
+  margin-bottom: 25px;
 
   color: $black;
 
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   label {
     position: relative;
+
     display: block;
     margin-left: 46px;
+
+    @media (min-width: $tablet) {
+      margin-left: 58px;
+    }
   }
 }
 
 .addition-checkbox + label::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: -5px;
   left: -46px;
 
   width: 30px;
   height: 30px;
 
   border: 1px solid $very-light-grey;
-  transform: translateY(-50%);
+
+  @media (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+    left: -58px;
+  }
 }
 
 .addition-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 3px;
   left: -40px;
 
   width: 18px;
   height: 14px;
 
-  background-image: url("../../img/svg/check.svg");
+  background-image: url("../img/svg/check.svg");
   background-repeat: no-repeat;
-  transform: translateY(-50%);
+
+  @media (min-width: $tablet) {
+    top: 7px;
+    left: -46px;
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .addition-checkbox:focus + label::before {
@@ -42,8 +81,8 @@
 }
 
 .addition-checkbox:disabled + label::before {
-  opacity: 0.3;
   cursor: none;
+  opacity: 0.3;
 }
 
 .addition-checkbox:disabled + label {
@@ -53,15 +92,21 @@
 
 
 .addition__wrapper {
+  margin-bottom: 26px;
+
   @media (min-width: $tablet) {
     display: grid;
+    margin: 0;
+
+    grid-row-gap: 18px;
+    grid-column-gap: 60px;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
   }
 
   @media (min-width: $desktop) {
     display: grid;
+
+    grid-gap: 80px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
   }
 }
