@@ -1,6 +1,6 @@
 .button {
   width: 280px;
-  padding: 13px 48px;
+  padding: 11px 48px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -19,5 +19,14 @@
 
   &:active {
     color: $light-white;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 80px;
   }
 }

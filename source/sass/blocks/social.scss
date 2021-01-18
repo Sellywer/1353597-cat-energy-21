@@ -1,22 +1,42 @@
 .social__item {
-  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 22px;
+
+  @media (min-width: $tablet) {
+    justify-self: center;
+    align-items: baseline;
+    width: 30px;
+    height: 33px;
+  }
 }
 
 .social__link {
+  color: $dim-gray;
+
   svg {
-    fill: $dim-gray;
+    @media (min-width: $tablet) {
+      width: 30px;
+      height: 24px;
+
+      vertical-align: middle;
+    }
+  }
+
+  &--fb {
+    svg {
+      fill: transparent;
+    }
   }
 }
 
 .social__link:hover,
 .social__link:focus {
-  svg {
-    fill: $apple;
-  }
+  color: $apple;
 }
 
-.social__icon:active {
-  svg {
-    fill: $light-apple;
-  }
+.social__link:active {
+  opacity: 0.3;
 }

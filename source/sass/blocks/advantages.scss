@@ -1,23 +1,37 @@
 .advantages {
-  margin: 10px 0;
-  padding: 0 20px;
+  margin: 22px 0 0;
 
   @media (min-width: $tablet) {
-    padding: 0 30px;
+    padding: 0 0 30px;
+    margin: 0 0 44px;
+    border-bottom: 1px solid $exstra-whisper;
   }
 
   @media (min-width: $desktop) {
+    border: none;
     padding: 0;
-    padding-bottom: 70px;
+    margin: 0 0 52px;
+  }
+
+  &__wrapper {
+    @media (min-width: $desktop) {
+      padding: 0 110px;
+    }
   }
 }
 
 .advantages__title {
-  font-weight: normal;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 
   @media (min-width: $tablet) {
+    margin-bottom: 70px;
+
     font-size: 60px;
     line-height: 60px;
   }
@@ -31,22 +45,164 @@
 
   @media (min-width: $tablet) {
     display: grid;
-    grid-column-gap: 150px;
+
+    grid-column-gap: 59px;
+    grid-row-gap: 61px;
     grid-template-columns: 1fr 1fr;
+    counter-reset: feature-number;
   }
 
   @media (min-width: $desktop) {
-    display: flex;
-    grid-row-gap: 0;
-    grid-column-gap: 50px;
+    grid-column-gap: 74px;
+    grid-row-gap: 35px;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .advantages__item {
-  padding: 10px 0;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    padding: 112px 60px 44px 0;
+
+    &::after {
+      content: counter(feature-number);
+      position: absolute;
+      z-index: -1;
+      left: 55%;
+      transform: translateX(-50%);
+      top: -40px;
+      font-family: $font-main;
+      font-size: 280px;
+      line-height: 280px;
+      color: $white-smoke;
+      counter-increment: feature-number;
+    }
+
+    @media (min-width: $desktop) {
+      &::after {
+        left: 46%;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 112px 0 45px;
+  }
+
+  &--functionality {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/svg/advantages/functionality-mobile.svg");
+
+      @media (min-width: $tablet) {
+        top: 0;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+
+        background-image: url("../img/svg/advantages/functionality-tablet-dekstop.svg");
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &--simplicity {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/svg/advantages/simplicity-mobile.svg");
+
+      @media (min-width: $tablet) {
+        top: 0;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+
+        background-image: url("../img/svg/advantages/simplicity-tablet-dekstop.svg");
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &--time {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/svg/advantages/time-mobile.svg");
+
+      @media (min-width: $tablet) {
+        top: 0;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+
+        background-image: url("../img/svg/advantages/time-tablet-dekstop.svg");
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &--result {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/svg/advantages/result-mobile.svg");
+
+      @media (min-width: $tablet) {
+        top: 0;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+
+        background-image: url("../img/svg/advantages/result-tablet-dekstop.svg");
+        transform: translateY(0);
+      }
+    }
+  }
 }
 
 .advantages__desc {
+  margin: 0;
+  padding: 0;
   padding-left: 80px;
 
   font-size: 14px;
@@ -55,16 +211,9 @@
   color: $charcoal;
 
   @media (min-width: $tablet) {
-    padding-top: 160px;
-    padding-right: 70px;
-    padding-left: 0;
+    padding: 0;
 
     font-size: 16px;
     line-height: 24px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-top: 160px;
-    padding-right: 0;
   }
 }

@@ -15,6 +15,14 @@
   clip-path: inset(100%);
 }
 
+.page-main {
+  overflow-x: hidden;
+}
+
+.no-pointer {
+  pointer-events: none;
+}
+
 *,
 *::before,
 *::after {

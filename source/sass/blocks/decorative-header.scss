@@ -1,0 +1,57 @@
+.decorative-header {
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+  font-family: $font-main;
+  font-weight: 300;
+  margin-top: 0;
+  position: relative;
+  display: inline-flex;
+  text-transform: none;
+
+  @media (min-width: $tablet) {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.decorative-header::before,
+.decorative-header::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 2px;
+  top: 22px;
+}
+
+.decorative-header::before {
+  background-color: $apple;
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    left: -36px;
+    transform: translateX(-100%);
+  }
+
+  @media (min-width: $desktop) {
+    left: -33px;
+  }
+}
+
+.decorative-header::after {
+  top: 15px;
+  transform: translateX(100%);
+  background-color: $apple;
+  right: -22px;
+
+  @media (min-width: $tablet) {
+    top: 22px;
+    right: -37px;
+  }
+
+  @media (min-width: $desktop) {
+    right: -38px;
+  }
+}
